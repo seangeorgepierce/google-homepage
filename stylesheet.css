@@ -58,17 +58,46 @@ main{
     padding-top: 220px;
     
 }
-.logo {
+div .logo {
     display: block;
     margin: 0 auto;
+    max-height: 60%;
+    max-width: 60%;
 }
-form{
-    display: absolute;
-    flex-direction: row;
-    justify-content: center;
+.wrapper {
     position: relative;
-    
+    display: flex;
+    min-width: 100px;
 }
+.search-icon {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    width: 14px;
+}
+.clear-icon {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    width: 10px;
+    cursor: pointer;
+}
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 2px 33px 2px 140px;
+    outline: 0;
+    background-color: #f5f5f5;
+    border-radius: 10%;
+  }
+
+  .search:hover, .search:focus {
+    border: 1.5px solid #d6d6d6;
+    background-color: white;
+  }
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -113,4 +142,10 @@ nav.footnav{
     max-width: 40%;
     max-height: 40%;
     display: block;
+    position: fixed;
+    padding-left: 25px;
+}
+.Carbonneutral {
+    padding-left: 60px;
+    
 }
